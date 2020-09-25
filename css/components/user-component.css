@@ -52,3 +52,15 @@
   margin-bottom: 10px;
   display: block;
 }
+
+.user-component__phonenumbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-component__phonenumbers i {
+  color: tomato;
+  margin-left: 5px;
+  margin-top: 10px;
+}
