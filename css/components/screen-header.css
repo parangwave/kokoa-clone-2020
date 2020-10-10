@@ -28,19 +28,7 @@
   animation: rotatecog 1s ease-in-out infinite;
 }
 
-.setting-notification {
-  position: relative;
-}
-
-.setting-notification i {
-  font-size: xx-small;
-  color: tomato;
-  position: absolute;
-  right: -10px;
-  top: -5px;
-}
-
-.screen-header .setting-notification i {
-  right: -10px;
-  top: -30px;
+.screen-header .setting-notification {
+  margin-top: -30px;
+  margin-left: 97px;
 }

@@ -64,3 +64,13 @@ body {
 .nav__btn:last-child {
   animation-delay: 0.8s;
 }
+
+.setting-notification {
+  position: absolute;
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 35px;
+  margin-top: -3px;
+}
