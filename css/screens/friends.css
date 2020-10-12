@@ -1,3 +1,7 @@
+#friends-screen-body {
+  height: 115vh;
+}
+
 #friends-display-link {
   text-align: center;
   display: block;

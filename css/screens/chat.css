@@ -102,26 +102,17 @@
   }
 }
 
-.message__info {
+.message__info,
+.chelsea-reply__column {
   margin-bottom: 10px;
   opacity: 0;
   animation: messageInfoFadeIn 1.5s linear forwards;
 }
 
-.message-row__own .message__info {
-  opacity: 0;
-  animation: OwnmessageInfoFadeIn 1.5s linear forwards;
-  animation-delay: 1s;
-}
-
-.chelsea-reply__column {
-  opacity: 0;
-  animation: OwnmessageInfoFadeIn 1.5s linear forwards;
-}
-
+.message-row__own .message__info,
 .chelsea__column {
   opacity: 0;
-  animation: messageInfoFadeIn 1.5s linear forwards;
+  animation: OwnmessageInfoFadeIn 1.5s linear forwards;
   animation-delay: 1s;
 }
 

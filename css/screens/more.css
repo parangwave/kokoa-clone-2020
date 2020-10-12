@@ -13,7 +13,7 @@
 
 .more-suggestions__icons {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
 }
 
 .more-suggestions__icon {
@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .more-suggestions__icon-image {
@@ -43,12 +44,12 @@
 }
 
 .more-suggestions__icon:first-child img:hover {
-  animation: rotatecog 2s ease-in-out infinite;
+  animation: rotate360 2s ease-in-out infinite;
 }
 
 .more-suggestions__icon:nth-child(2) img:hover,
 .more-suggestions__icon:nth-child(3) img:hover {
-  animation: Vibrate 1s ease-in-out infinite;
+  animation: bounce 0.8s cubic-bezier(0.6, 0, 0.735, 0.045) infinite;
 }
 
 .more-suggestions__icon:last-child img:hover {
@@ -56,18 +57,28 @@
 }
 
 @keyframes Motorcycle {
-  0%{
+  0% {
     transform: none;
   }
   25% {
     transform: rotate(10deg);
   }
-  50%{
+  50% {
     transform: none;
   }
   75% {
-    transform: translate(50px);
+    transform: translate(40px);
   }
   100% {
     transform: none;
   }
+}
+
+@keyframes rotate360 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

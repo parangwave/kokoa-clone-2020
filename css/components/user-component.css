@@ -64,7 +64,19 @@
 }
 
 .user-component__column:last-child .badge {
-  animation: upDown 1.5s ease-in-out infinite;
+  animation: bounce 0.8s cubic-bezier(0.6, 0, 0.735, 0.045) infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .user-component__time {
