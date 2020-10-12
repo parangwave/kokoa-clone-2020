@@ -1,18 +1,19 @@
-.more-screen .icon-row {
+.more-screen-body .icon-row {
   margin-top: 35px;
 }
 .more-suggestions {
   margin-top: 50px;
   border-top: var(--main-border);
-  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
-.more-suggestions__title {
-  margin-bottom: 30px;
+#more-screen-body .user-component:hover {
+  animation: none;
 }
 
 .more-suggestions__icons {
   display: flex;
+  text-align: center;
 }
 
 .more-suggestions__icon {
@@ -25,7 +26,6 @@
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--yellow);
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -33,7 +33,41 @@
   margin-bottom: 10px;
 }
 
+.more-suggestions__icon img {
+  width: 75px;
+}
+
 .more-suggestions__icon-image i {
   font-size: 32px;
   color: white;
 }
+
+.more-suggestions__icon:first-child img:hover {
+  animation: rotatecog 2s ease-in-out infinite;
+}
+
+.more-suggestions__icon:nth-child(2) img:hover,
+.more-suggestions__icon:nth-child(3) img:hover {
+  animation: Vibrate 1s ease-in-out infinite;
+}
+
+.more-suggestions__icon:last-child img:hover {
+  animation: Motorcycle 1.5s ease-in-out infinite;
+}
+
+@keyframes Motorcycle {
+  0%{
+    transform: none;
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: none;
+  }
+  75% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: none;
+  }

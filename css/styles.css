@@ -9,6 +9,7 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
+@import "components/no-mobile.css";
 
 /*Screens*/
 @import "screens/login.css";
@@ -18,9 +19,14 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
 body {
   color: #2e363e;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--main-color);
+  height: 110vh;
 }
 
 .main-screen {

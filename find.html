@@ -4,16 +4,16 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find - Kokoa Clone</title>
+    <title>Find</title>
   </head>
-  <body>
+  <body id="find-screen-body">
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span><i class="fas fa-signal"></i></span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>16:43</span>
       </div>
       <div class="status-bar__column">
         <span>110%</span>
@@ -51,10 +51,61 @@
           <span>Invite</span>
         </div>
       </div>
+
       <div class="recommended-friends">
         <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
+        <ul class="recommended-friends-list">
+          <li class="recommended-friends-list__column">
+            <img
+            src="img/profile-img/delancy-profile.png"
+            class="user-component__avatar user-component__avatar--sm"
+           />
+            <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+            Delancy
+            </h4>
+            <h6>sk8er girl</h6>
+            </div>
+        </li>
+          <li class="recommended-friends-list__column">
+              <img
+              src="img/profile-img/kenzie-profile.png"
+              class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                kenzie
+              </h4>
+              <h6>Just kidding!</h6>
+            </div>
+          </li>
+          <li class="recommended-friends-list__column">
+              <img
+              src="img/profile-img/Ellis-profile.png"
+              class="user-component__avatar user-component__avatar--sm"
+             />
+              <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+              Ellis
+              </h4>
+              <h6>sk8er boi</h6>
+              </div>
+          </li>
+          <li class="recommended-friends-list__column">
+              <img
+              src="img/profile-img/hudson-profile.png"
+              class="user-component__avatar user-component__avatar--sm"
+             />
+              <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+              Hudson
+              </h4>
+              <h6>Bummer..</h6>
+              </div>
+          </li>
+        </ul>
       </div>
+
       <div class="open-chat">
         <div class="open-chat__header">
           <h4>Open Chat</h4>
@@ -64,10 +115,10 @@
         </div>
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#Irene</h5>
-            <h6 class="open-post__hashtags">#irene#redvelvet#friends</h6>
+            <h5 class="open-post__title">#My 'Zine</h5>
+            <h6 class="open-post__hashtags">#fashion #hip-how-to's #411</h6>
             <div class="open-post__members">
-              <img src="qoo_cake.png" />
+              <img src="img/component-img/button.png" />
               <span class="open-post__members-count">329 members</span>
               <div class="divider"></div>
               <span class="open-post__members-status">Active</span>
@@ -76,11 +127,34 @@
           <div class="open-post__column">
             <div class="open-post__photo">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQv4k-n7rH94ZTkYX2W8D6mcyjM9JMVWJ6mUA&usqp=CAU"
+                src="img/component-img/my-zine.png"
               />
               <div class="open-post__heart-count">
                 <i class="fas fa-heart fa-xs"></i>
                 <span>329</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Fortune-Fun</h5>
+            <h6 class="open-post__hashtags">#Tarot-card #Tarot-reading</h6>
+            <div class="open-post__members">
+              <img src="img/component-img/flower.png" />
+              <span class="open-post__members-count">517 members</span>
+              <div class="divider"></div>
+              <span class="open-post__members-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="img/component-img/fortune-fun.png"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i>
+                <span>486</span>
               </div>
             </div>
           </div>
@@ -98,7 +172,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="fas fa-comment fa-2x"></i>
+            <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -115,6 +189,14 @@
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big!</span>
+    </div>
+
+    <div id="no-landscape">
+      <span>Please rotate your device!</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

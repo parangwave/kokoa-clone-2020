@@ -1,11 +1,21 @@
 .user-component {
   justify-content: space-between;
+  margin: 10px;
 }
 
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+
+.user-component {
+  border-radius: 30px;
+  padding-right: 5px;
+}
+
+.user-component:hover {
+  animation: hoverShadow 1s ease-in-out infinite;
 }
 
 .user-component__avatar {
@@ -41,11 +51,20 @@
   font-weight: 400;
 }
 
+.user-component__text h6 {
+  opacity: 0.8;
+  margin-top: 3px;
+}
+
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.user-component__column:last-child .badge {
+  animation: upDown 1.5s ease-in-out infinite;
 }
 
 .user-component__time {
@@ -60,7 +79,29 @@
 }
 
 .user-component__phonenumbers i {
-  color: tomato;
+  color: var(--sub-color-2);
   margin-left: 5px;
-  margin-top: 10px;
+}
+
+.user-component__column .phone-img {
+  width: 100px;
+  animation: Vibrate 1s ease-in-out infinite;
+  z-index: 50;
+}
+
+@keyframes Vibrate {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#chats-screen-body .main-screen .user-component__column {
+  padding: 10px;
+  border-radius: 30px;
 }

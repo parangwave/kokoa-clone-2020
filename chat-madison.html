@@ -4,16 +4,16 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat with Unda - Kokoa Clone</title>
+    <title>Chat with MADS</title>
   </head>
-  <body id="chat-screen">
+  <body id="chat-screen-body">
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span><i class="fas fa-signal"></i></span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>16:43</span>
       </div>
       <div class="status-bar__column">
         <span>110%</span>
@@ -29,7 +29,7 @@
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Unda</h1>
+        <span class="alt-header__title">MADS</span>
       </div>
       <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i></span>
@@ -38,14 +38,22 @@
     </header>
 
     <main class="main-screen main-chat">
-      <div class="chat__timestamp">Tuesday, March 29th, 2020</div>
+      <div class="chat__timestamp">Saturday, May 23th, 2020</div>
       <div class="message-row">
-        <img src="qoo_cake.png" />
+        <img src="img/profile-img/madison-profile.png" />
         <div class="message-row__content">
-          <span class="message__author">Unda</span>
+          <span class="message__author">Madison</span>
           <div class="message__info">
-            <span class="message__bubble">Hi!</span>
-            <span class="message__time">03:29</span>
+            <span class="message__bubble">MAJOR CRISIS!!!</span>
+            <span class="message__time">12:58</span>
+          </div>
+          <div class="message__info">
+            <span class="message__bubble">They got A dress</span>
+            <span class="message__time">12:58</span>
+          </div>
+          <div class="message__info">
+            <span class="message__bubble">Not the G dress we ordered!</span>
+            <span class="message__time">12:59</span>
           </div>
         </div>
       </div>
@@ -53,8 +61,18 @@
       <div class="message-row message-row__own">
         <div class="message-row__content">
           <div class="message__info">
-            <span class="message__bubble">Hi! nice to meet you! 🥰</span>
-            <span class="message__time">03:29</span>
+            <span class="message__bubble">Bummer! 🤯</span>
+            <span class="message__time">13:00</span>
+          </div>
+        </div>
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">I know.<br>I'll send C over</span>
+            <span class="message__time">13:01</span>
+          </div>
+          <div class="message__info">
+            <span class="message__bubble">maybe she can fix it</span>
+            <span class="message__time">13:01</span>
           </div>
         </div>
       </div>
@@ -72,6 +90,14 @@
         </button>
       </div>
     </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big!</span>
+    </div>
+
+    <div id="no-landscape">
+      <span>Please rotate your device!</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

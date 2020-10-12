@@ -13,6 +13,18 @@
   font-size: 22px;
 }
 
+.settings__setting i:hover {
+  animation: zoomIcon 1s ease-in-out infinite;
+}
+
+.settings__setting:first-child > .settings__setting__column:last-child {
+  background-color: var(--sub-color-2);
+}
+
+.settings__setting:last-child {
+  border-bottom: none;
+}
+
 .settings_setting-column:last-child {
   opacity: 0.5;
 }

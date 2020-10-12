@@ -1,7 +1,7 @@
 .icon-row {
   display: flex;
   flex-wrap: wrap;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--sub-color);
   margin: 0px;
 }
 
@@ -13,6 +13,8 @@
   padding: 10px;
   box-sizing: border-box;
   padding-top: 25px;
+  text-align: center;
+  border-radius: 40px;
 }
 
 .icon-row__icon i {
@@ -21,4 +23,8 @@
 
 .icon-row__icon span {
   margin-top: 18px;
+}
+
+.icon-row__icon:hover {
+  animation: hoverShadow 1s ease-in-out infinite;
 }

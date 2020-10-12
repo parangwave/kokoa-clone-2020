@@ -6,7 +6,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f9f9fa;
+  background-color: whitesmoke;
   padding: 20px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.2);
@@ -25,7 +25,7 @@ body {
     transform: none;
   }
   50% {
-    transform: translateY(-5px) rotateY(180deg);
+    transform: translateY(-3px) scale(1.2, 0.5);
   }
   100% {
     transform: none;
@@ -36,7 +36,7 @@ body {
   position: absolute;
   left: 15px;
   bottom: 15px;
-  animation: notificationAnimation 2s ease-in-out infinite;
+  animation: notificationAnimation 1.5s ease-in-out infinite;
 }
 
 @keyframes appearNavBtnAnimation {
@@ -55,6 +55,10 @@ body {
   animation: appearNavBtnAnimation 1s ease-in-out forwards;
 }
 
+.nav__btn i:hover {
+  animation: zoomIcon 1s ease-in-out infinite;
+}
+
 .nav__btn:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -67,10 +71,18 @@ body {
 
 .setting-notification {
   position: absolute;
-  background-color: tomato;
-  width: 10px;
-  height: 10px;
+  background-color: var(--sub-color-2);
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   margin-left: 35px;
   margin-top: -3px;
+  animation: upDown 1.5s ease-in-out infinite;
+}
+
+#friends-screen-body .fas.fa-user,
+#chats-screen-body .fas.fa-comment,
+#find-screen-body .fas.fa-search,
+#more-screen-body .fas.fa-ellipsis-h {
+  color: var(--sub-color-2);
 }
