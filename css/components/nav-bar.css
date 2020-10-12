@@ -80,9 +80,9 @@ body {
   animation: upDown 1.5s ease-in-out infinite;
 }
 
-#friends-screen-body .fas.fa-user,
-#chats-screen-body .fas.fa-comment,
-#find-screen-body .fas.fa-search,
-#more-screen-body .fas.fa-ellipsis-h {
+#friends-screen-body .nav .fas.fa-user,
+#chats-screen-body .nav .fas.fa-comment,
+#find-screen-body .nav .fas.fa-search,
+#more-screen-body .nav .fas.fa-ellipsis-h {
   color: var(--sub-color-2);
 }
