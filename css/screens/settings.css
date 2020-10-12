@@ -17,14 +17,20 @@
   animation: zoomIcon 1s ease-in-out infinite;
 }
 
-.settings__setting:first-child > .settings__setting__column:last-child {
-  background-color: var(--sub-color-2);
-}
-
 .settings__setting:last-child {
   border-bottom: none;
 }
 
 .settings_setting-column:last-child {
   opacity: 0.5;
+}
+
+.settings__setting:first-child .settings_setting-column:last-child {
+  opacity: 1;
+}
+
+.settings_setting-column img {
+  height: 30px;
+  width: 30px;
+  animation: bounce 0.8s cubic-bezier(0.6, 0, 0.735, 0.045) infinite;
 }
